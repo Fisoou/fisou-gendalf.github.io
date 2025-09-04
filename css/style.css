@@ -41,8 +41,33 @@ img {
   justify-content: center;
 }
 
-button {
+.btn {
   cursor: pointer;
+  height: 50px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-primary {
+  color: #fff;
+  border: none;
+  background-color: var(--green);
+}
+
+.btn-primary:hover {
+  background-color: var(--green-hover);
+}
+
+.btn-secondary {
+  color: var(--green);
+  background-color: #fff;
+  border: 1px solid var(--green);
+}
+
+.btn-secondary:hover {
+  color: var(--green-hover);
 }
 
 .icon {
@@ -71,7 +96,7 @@ button {
   transition: transform 0.3s ease;
 }
 
-.mobile-icons {
+.mobile-icons-con {
   display: none;
   align-items: center;
 }
@@ -82,14 +107,15 @@ button {
   cursor: pointer;
 }
 
-#interview {
+.interview-link {
   color: var(--teal);
   margin-left: 22px;
   background-color: #ffffff;
   width: 255px;
   height: 40px;
-  border-radius: 5px;
   border: none;
+  line-height: 40px;
+  text-align: center;
 }
 
 .welcome {
@@ -98,36 +124,41 @@ button {
   width: 1280px;
   overflow: hidden;
   height: 568px;
+  color: #fff;
+  text-align: center;
 }
 
-#ppl-img {
-  display: none;
+.darkener::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 48, 60, 0.5);
 }
 
-#office-img {
+.office-img {
   width: 1280px;
   position: absolute;
   top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
   width: 100%;
+  display: block;
 }
 
-#darkener {
-  display: block;
-  position: absolute;
-  z-index: 2;
+.ppl-img {
+  display: none;
 }
 
 .welcome-text {
   position: relative;
   z-index: 3;
-  color: #ffffff;
-  text-align: center;
 }
 
-#welcome-gendalf {
+.welcome-heading {
   font-size: 64px;
   font-weight: 700;
   max-width: 660px;
@@ -135,7 +166,7 @@ button {
   line-height: 85px;
 }
 
-#welcome-text {
+.welcome-desc {
   font-size: 25px;
   font-weight: 400;
   max-width: 834px;
@@ -154,36 +185,12 @@ button {
   margin-top: 43px;
 }
 
-#why-us {
-  color: #ffffff;
-  background-color: var(--green);
+.why-us {
   width: 175px;
-  border-radius: 5px;
-  border: none;
-  font-size: 18px;
-  font-weight: 700;
-  transition: ease-in-out 0.2s;
 }
 
-#why-us:hover {
-  background-color: var(--green-hover);
-  transition: ease-in-out 0.2s;
-}
-
-#appointment-white {
-  color: var(--green);
-  background-color: #ffffff;
+.appointment-white {
   width: 327px;
-  border: 1px solid var(--green);
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 700;
-  transition: ease-in-out 0.2s;
-}
-
-#appointment-white:hover {
-  color: var(--green-hover);
-  transition: ease-in-out 0.2s;
 }
 
 .about-container {
@@ -192,7 +199,7 @@ button {
   position: relative;
 }
 
-#about {
+.about {
   width: 728px;
   height: 270px;
   font-size: 18px;
@@ -200,12 +207,16 @@ button {
   margin: 0;
 }
 
-#about-header {
+.header-2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--teal);
+}
+
+.about-header {
   margin: 0 0 20px 0;
   padding: 0;
   color: var(--teal);
-  font-size: 36px;
-  font-weight: 300;
 }
 
 .learn-btns {
@@ -215,35 +226,29 @@ button {
   font-size: 18px;
 }
 
-#learn-more {
+.learn-more {
   color: #ffffff;
   background-color: var(--teal);
   width: 225px;
-  border-radius: 5px;
   border: none;
-  transition: ease-in-out 0.2s;
 }
 
-#learn-more:hover {
+.learn-more:hover {
   background-color: var(--teal-hover);
-  transition: ease-in-out 0.2s;
 }
 
-#appointment-blue {
+.appointment-blue {
   color: var(--teal);
   background-color: #ffffff;
   width: 320px;
   border: 1px solid var(--teal);
-  border-radius: 5px;
-  transition: ease-in-out 0.2s;
 }
 
-#appointment-blue:hover {
+.appointment-blue:hover {
   color: var(--teal-hover);
-  transition: ease-in-out 0.2s;
 }
 
-#woc {
+.woc {
   width: 454px;
   height: 368px;
   position: absolute;
@@ -259,12 +264,9 @@ button {
   background-color: #e9e9e9;
 }
 
-#values-header {
+.values-header {
   padding: 36px 0 37px 10px;
   margin: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: var(--teal);
 }
 
 .swiper-button-prev {
@@ -319,11 +321,8 @@ button {
   );
 }
 
-#infrastructure-header {
-  font-weight: 300;
-  font-size: 36px;
+.infrastructure-header {
   text-align: center;
-  color: var(--teal);
   margin: 0;
   padding-top: 61px;
 }
@@ -354,12 +353,9 @@ button {
   background-color: #e9e9e9;
 }
 
-#feed-header {
+.feed-header {
   margin: 0;
   padding: 37px 0 21px 12px;
-  color: var(--teal);
-  font-weight: 300;
-  font-size: 36px;
 }
 
 .feed-swiper {
@@ -382,7 +378,6 @@ button {
     rgba(7, 168, 219, 0.16) 98.64%
   );
   border: 2px solid #ffffff;
-  border-radius: 5px;
   box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
@@ -403,7 +398,6 @@ button {
 
 .feed-btn {
   border: 2px solid var(--teal);
-  border-radius: 5px;
   color: var(--teal);
   font-size: 18px;
   font-weight: 400;
@@ -414,63 +408,37 @@ button {
   margin-bottom: 25px;
 }
 
-.practice {
+.practice-con {
   position: relative;
   display: block;
   overflow: hidden;
   height: 415px;
 }
 
-#practice-img {
+.practice-img {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 415px;
   object-fit: cover;
-  z-index: 1;
+  display: block;
 }
 
-#darkener2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 415px;
-  z-index: 2;
-}
-
-.student {
+.student-con {
   position: relative;
   z-index: 3;
-  color: #ffffff;
   text-align: center;
 }
 
-#student {
-  margin: 0;
-  font-weight: 700;
+.student-heading {
+  color: #fff;
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
   margin: 83px 0 43px 0;
 }
 
-#request {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 18px;
-  background-color: var(--green);
-  border-radius: 5px;
-  border: none;
+.request {
   width: 289px;
-  height: 50px;
-  transition: ease-in-out 0.2s;
-}
-
-#request:hover {
-  background-color: var(--green-hover);
-  transition: ease-in-out 0.2s;
 }
 
 .questions {
@@ -513,13 +481,11 @@ button {
   cursor: pointer;
   margin-top: 30px;
   margin-bottom: 8px;
-  transition: ease-in-out 0.2s;
   text-decoration: underline;
 }
 
 .faq-question:hover {
   color: var(--teal);
-  transition: ease-in-out 0.2s;
 }
 
 .faq-question::before {
@@ -564,15 +530,10 @@ details[open] .faq-question::before {
   align-items: center;
 }
 
-#laptop {
+.laptop {
   width: 100%;
   position: relative;
   z-index: 1;
-}
-
-#darkener3 {
-  position: absolute;
-  z-index: 2;
 }
 
 .inap-container {
@@ -605,7 +566,6 @@ details[open] .faq-question::before {
   width: 568px;
   height: 50px;
   margin-bottom: 6px;
-  border-radius: 5px;
   border: 1px solid var(--gray-text);
   padding: 0 0 0 16px;
 }
@@ -691,43 +651,20 @@ details[open] .faq-question::before {
 }
 
 .inap-btn {
-  height: 50px;
-  font-size: 18px;
   font-weight: bold;
 }
 
-#attach-resume {
+.attach-resume {
   width: 270px;
-  background-color: #ffffff;
-  border: 2px solid var(--green);
-  border-radius: 5px;
-  color: var(--green);
-
   background-image: url("../img/paper-clip.png");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 28px 27px;
   padding-right: 30px;
-  transition: ease-in-out 0.2s;
 }
 
-#attach-resume:hover {
-  color: var(--green-hover);
-  transition: ease-in-out 0.2s;
-}
-
-#sign-up {
+.sign-up {
   width: 218px;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--green);
-  transition: ease-in-out 0.2s;
-}
-
-#sign-up:hover {
-  background-color: var(--green-hover);
-  transition: ease-in-out 0.2s;
 }
 
 @media (max-width: 768px) {
@@ -816,7 +753,7 @@ details[open] .faq-question::before {
     padding-bottom: 20px;
   }
 
-  #ppl-img {
+  .ppl-img {
     position: absolute;
     display: block !important;
     z-index: 1;
@@ -859,9 +796,10 @@ details[open] .faq-question::before {
     height: 50px !important;
   }
 
-  #about {
+  .about {
     width: auto;
     height: auto;
+    margin: 10px 10px 30px 10px;
   }
 
   .intro-img {
@@ -872,13 +810,9 @@ details[open] .faq-question::before {
     width: auto;
   }
 
-  #about-header {
+  .about-header {
     text-align: center;
     margin: 45px 10px 10px 10px;
-  }
-
-  #about {
-    margin: 10px 10px 30px 10px;
   }
 
   .learn-btns {

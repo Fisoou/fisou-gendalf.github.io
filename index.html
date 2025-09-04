@@ -18,7 +18,7 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="mobile-icons">
+        <div class="mobile-icons-con">
           <img src="img/search.png" alt="Поиск" class="mobile-icon" />
           <img src="img/cart.png" alt="Корзина" class="mobile-icon" />
         </div>
@@ -26,14 +26,9 @@
           <source srcset="img/blue-icon.png" media="(max-width: 768px)" />
           <img class="icon" src="img/icon.png" alt="Иконка" />
         </picture>
-        <div class="mobile-icons">
+        <div class="mobile-icons-con">
           <img src="img/profile.png" alt="Профиль" class="mobile-icon" />
-          <img
-            id="burger"
-            src="img/burger.png"
-            alt="Меню"
-            class="mobile-icon"
-          />
+          <img src="img/burger.png" alt="Меню" class="mobile-icon" />
         </div>
         <nav class="menu">
           <ul class="menu-list">
@@ -52,42 +47,33 @@
             <li class="menu-item">
               <a href="" class="menu-link">Отзывы</a>
             </li>
-            <button id="interview">Запись на собеседование</button>
+            <a href="#laptop" class="btn interview-link"
+              >Запись на собеседование</a
+            >
           </ul>
         </nav>
       </div>
-      <div class="welcome">
-        <img class="intro-img" id="ppl-img" src="img/ppl.png" />
-        <img
-          class="intro-img"
-          id="office-img"
-          src="img/office.jpg"
-          alt="Офис"
-        />
-        <img
-          class="intro-img"
-          id="darkener"
-          src="img/darkener.png"
-          alt="Офис"
-        />
-        <p class="welcome-text" id="welcome-gendalf">
+      <div class="welcome darkener">
+        <img class="intro-img ppl-img" src="img/ppl.png" />
+        <img class="intro-img office-img" src="img/office.jpg" alt="Офис" />
+        <h1 class="welcome-text welcome-heading">
           Добро пожаловать в ГЭНДАЛЬФ!
-        </p>
-        <p class="welcome-text" id="welcome-text">
+        </h1>
+        <p class="welcome-text welcome-desc">
           Мы готовы поделиться секретом, почему любим компанию, в которой
           работаем. Если тебе будут близки наши ценности и идеи, то смело
           записывайся на собеседование!
         </p>
         <div class="welcome-btns">
-          <button class="welcome-btn" id="why-us">Почему мы</button>
-          <button class="welcome-btn" id="appointment-white">
+          <button class="btn btn-primary why-us">Почему мы</button>
+          <button class="btn btn-secondary appointment-white">
             Записаться на собеседование
           </button>
         </div>
       </div>
       <div class="about-container">
-        <p id="about-header">О том, чем мы занимаемся</p>
-        <p id="about">
+        <h2 class="about-header header-2">О том, чем мы занимаемся</h2>
+        <p class="about">
           ГЭНДАЛЬФ – один из крупнейших игроков на рынке информационных
           технологий, занимающий 4 место среди 7000 партнеров фирмы «1С». У нас
           есть представительства в 15 городах России, а нашими услугами
@@ -101,16 +87,18 @@
           маркетологи, менеджеры, копирайтеры, методисты и другие, чей карьерный
           рост не ограничен привычными рамками.
         </p>
-        <img id="woc" src="img/woc.png" alt="Женщина на стуле" />
+        <img class="woc" src="img/woc.png" alt="Женщина на стуле" />
         <div class="learn-btns">
-          <button class="learn-btn" id="learn-more">Узнать больше</button>
-          <button class="learn-btn" id="appointment-blue">
+          <button class="btn learn-btn learn-more">Узнать больше</button>
+          <button class="btn learn-btn appointment-blue">
             Записаться на собеседование
           </button>
         </div>
       </div>
       <div class="our-values">
-        <p id="values-header">Наши ценности скажут о нас больше:</p>
+        <h2 class="values-header header-2">
+          Наши ценности скажут о нас больше:
+        </h2>
         <div class="values-swiper swiper">
           <div class="swiper-button-prev values-swiper-button-prev"></div>
           <div class="swiper-button-next values-swiper-button-next"></div>
@@ -170,9 +158,9 @@
         </div>
       </div>
       <div class="infrastructure">
-        <p id="infrastructure-header">
+        <h2 class="infrastructure-header header-2">
           Инфраструктура для твоего развития и роста
-        </p>
+        </h2>
         <div class="infrastructure-text">
           <p id="infrastructure-text">
             Мы создаем платформу для профессионального развития каждого
@@ -187,7 +175,7 @@
         <img id="Tatyana" src="img/Tatyana.png" alt="Татьяна Арсенович..." />
       </div>
       <div class="feed">
-        <p id="feed-header">Живая лента</p>
+        <h2 class="feed-header header-2">Живая лента</h2>
         <div class="feed-swiper swiper">
           <div class="swiper-button-prev feed-swiper-button-prev"></div>
           <div class="swiper-button-next feed-swiper-button-next"></div>
@@ -198,19 +186,19 @@
                 Экономим на бумаге и угадываем фильмы: дайджест видео марта 2022
                 года
               </p>
-              <button class="feed-btn">Перейти к статье</button>
+              <button class="btn feed-btn">Перейти к статье</button>
             </div>
             <div class="swiper-slide feed-post">
               <img class="feed-img" src="img\changes.png" />
               <p class="feed-title">Изменения 2022 года</p>
-              <button class="feed-btn">Перейти к статье</button>
+              <button class="btn feed-btn">Перейти к статье</button>
             </div>
             <div class="swiper-slide feed-post">
               <img class="feed-img" src="img\programming.png" />
               <p class="feed-title">
                 Почему стоит работать программистом в 2022 году
               </p>
-              <button class="feed-btn">Перейти к статье</button>
+              <button class="btn feed-btn">Перейти к статье</button>
             </div>
             <div class="swiper-slide feed-post">
               <img class="feed-img" src="img\news.png" />
@@ -218,17 +206,18 @@
                 Автоматизированный УСН и путевые листы: дайджест новостей за
                 март 2022. Автоматизированный УСН и путевые листы
               </p>
-              <button class="feed-btn">Перейти к статье</button>
+              <button class="btn feed-btn">Перейти к статье</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="practice">
-        <img class="practice-imgs" id="darkener2" src="img/darkener2.png" />
-        <img class="practice-imgs" id="practice-img" src="img/practice.jpg" />
-        <div class="student">
-          <p id="student">Ты студент и хочешь устроиться<br />на практику?</p>
-          <button id="request">Оставить заявку</button>
+      <div class="practice-con darkener">
+        <img class="practice-img" src="img/practice.jpg" />
+        <div class="student-con">
+          <p class="student-heading header-2">
+            Ты студент и хочешь устроиться<br />на практику?
+          </p>
+          <button class="btn btn-primary request">Оставить заявку</button>
         </div>
       </div>
       <div class="questions">
@@ -290,9 +279,8 @@
           </details>
         </div>
       </div>
-      <div class="interview-appointment">
-        <img class="inap-img" id="laptop" src="img/laptop.jpg" />
-        <img class="inap-img" id="darkener3" src="img/darkener3.png" />
+      <div class="interview-appointment darkener">
+        <img class="inap-img laptop" src="img/laptop.jpg" />
         <div class="inap-container">
           <img id="inap-background" src="img/inap-background.png" />
           <div class="sign-up-container">
@@ -342,10 +330,12 @@
               placeholder="Ваши вопросы"
             ></textarea>
             <div class="inap-btns-container">
-              <button class="inap-btn" id="attach-resume">
+              <button class="btn btn-secondary inap-btn attach-resume">
                 Прикрепить резюме
               </button>
-              <button class="inap-btn" id="sign-up">Записаться</button>
+              <button class="btn btn-primary inap-btn sign-up">
+                Записаться
+              </button>
             </div>
           </div>
         </div>

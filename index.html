@@ -16,62 +16,60 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="mobile-icons-con">
-          <img src="img/search.png" alt="Поиск" class="mobile-icon" />
-          <img src="img/cart.png" alt="Корзина" class="mobile-icon" />
-        </div>
-        <picture>
-          <source srcset="img/blue-icon.png" media="(max-width: 768px)" />
-          <img class="icon" src="img/icon.png" alt="Иконка" />
-        </picture>
-        <div class="mobile-icons-con">
-          <img src="img/profile.png" alt="Профиль" class="mobile-icon" />
-          <img src="img/burger.png" alt="Меню" class="mobile-icon" />
-        </div>
-        <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a href="" class="menu-link">Профориентация</a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">Выбрать вакансию</a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">Карьера в ГЭНДАЛЬФ</a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">Стажерство</a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">Отзывы</a>
-            </li>
-            <a href="#laptop" class="btn interview-link"
-              >Запись на собеседование</a
-            >
-          </ul>
-        </nav>
+    <div class="header">
+      <div class="mobile-icons-con">
+        <img src="img/search.png" alt="Поиск" class="mobile-icon" />
+        <img src="img/cart.png" alt="Корзина" class="mobile-icon" />
       </div>
-      <div class="welcome darkener">
-        <img class="intro-img ppl-img" src="img/ppl.png" />
-        <img class="intro-img office-img" src="img/office.jpg" alt="Офис" />
-        <h1 class="welcome-text welcome-heading">
-          Добро пожаловать в ГЭНДАЛЬФ!
-        </h1>
-        <p class="welcome-text welcome-desc">
-          Мы готовы поделиться секретом, почему любим компанию, в которой
-          работаем. Если тебе будут близки наши ценности и идеи, то смело
-          записывайся на собеседование!
-        </p>
-        <div class="welcome-btns">
-          <button class="btn btn-primary why-us">Почему мы</button>
-          <button class="btn btn-secondary appointment-white">
-            Записаться на собеседование
-          </button>
-        </div>
+      <picture>
+        <source srcset="img/blue-icon.png" media="(max-width: 768px)" />
+        <img class="icon" src="img/icon.png" alt="Иконка" />
+      </picture>
+      <div class="mobile-icons-con">
+        <img src="img/profile.png" alt="Профиль" class="mobile-icon" />
+        <img src="img/burger.png" alt="Меню" class="mobile-icon" />
       </div>
-      <div class="about-container">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="" class="menu-link">Профориентация</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Выбрать вакансию</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Карьера в ГЭНДАЛЬФ</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Стажерство</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Отзывы</a>
+          </li>
+          <a href="#interview" class="btn interview-link"
+            >Запись на собеседование</a
+          >
+        </ul>
+      </nav>
+    </div>
+    <div class="welcome darkener">
+      <img class="intro-img ppl-img" src="img/ppl.png" />
+      <img class="intro-img office-img" src="img/office.jpg" alt="Офис" />
+      <h1 class="welcome-text welcome-heading">Добро пожаловать в ГЭНДАЛЬФ!</h1>
+      <p class="welcome-text welcome-desc">
+        Мы готовы поделиться секретом, почему любим компанию, в которой
+        работаем. Если тебе будут близки наши ценности и идеи, то смело
+        записывайся на собеседование!
+      </p>
+      <div class="welcome-btns">
+        <button class="btn btn-primary why-us">Почему мы</button>
+        <button class="btn btn-secondary appointment-white">
+          Записаться на собеседование
+        </button>
+      </div>
+    </div>
+    <div class="about-container">
+      <div class="container">
         <h2 class="about-header header-2">О том, чем мы занимаемся</h2>
         <p class="about">
           ГЭНДАЛЬФ – один из крупнейших игроков на рынке информационных
@@ -95,7 +93,9 @@
           </button>
         </div>
       </div>
-      <div class="our-values">
+    </div>
+    <div class="our-values">
+      <div class="container">
         <h2 class="values-header header-2">
           Наши ценности скажут о нас больше:
         </h2>
@@ -104,7 +104,7 @@
           <div class="swiper-button-next values-swiper-button-next"></div>
           <div class="values-swiper-wrapper swiper-wrapper">
             <div class="values-swiper-slide swiper-slide">
-              <img id="values-img" src="img\team.png" alt="Быть командой" />
+              <img class="values-img" src="img\team.png" alt="Быть командой" />
               <p class="values-title">Быть командой</p>
               <p class="values-description">
                 Готовность вносить вклад в общие цели команды и достигать их.
@@ -112,7 +112,7 @@
             </div>
             <div class="values-swiper-slide swiper-slide">
               <img
-                id="values-img"
+                class="values-img"
                 src="img/win.png"
                 alt="Побеждать и не сдаваться"
               />
@@ -124,7 +124,7 @@
             </div>
             <div class="values-swiper-slide swiper-slide">
               <img
-                id="values-img"
+                class="values-img"
                 src="img/clients.png"
                 alt="Заботиться о клиентах"
               />
@@ -136,7 +136,7 @@
             </div>
             <div class="values-swiper-slide swiper-slide">
               <img
-                id="values-img"
+                class="values-img"
                 src="img/responsible.png"
                 alt="Быть увлеченным и ответственным"
               />
@@ -147,7 +147,7 @@
               </p>
             </div>
             <div class="values-swiper-slide swiper-slide">
-              <img id="values-img" src="img/develop.png" alt="Развиваться" />
+              <img class="values-img" src="img/develop.png" alt="Развиваться" />
               <p class="values-title">Развиваться</p>
               <p class="values-description">
                 Постоянно расти личностно и профессионально для достижения
@@ -157,12 +157,14 @@
           </div>
         </div>
       </div>
-      <div class="infrastructure">
+    </div>
+    <div class="infrastructure">
+      <div class="container">
         <h2 class="infrastructure-header header-2">
           Инфраструктура для твоего развития и роста
         </h2>
-        <div class="infrastructure-text">
-          <p id="infrastructure-text">
+        <div class="infrastructure-text-con">
+          <p class="infrastructure-text">
             Мы создаем платформу для профессионального развития каждого
             сотрудника. Главная цель – дать возможность учиться, работать и
             получать удовольствие от каждой успешной задачи.<br
@@ -172,9 +174,11 @@
             Департамента персонала и карьеры Татьяна Арсенович.
           </p>
         </div>
-        <img id="Tatyana" src="img/Tatyana.png" alt="Татьяна Арсенович..." />
+        <img class="Tatyana" src="img/Tatyana.png" alt="Татьяна Арсенович..." />
       </div>
-      <div class="feed">
+    </div>
+    <div class="feed">
+      <div class="container">
         <h2 class="feed-header header-2">Живая лента</h2>
         <div class="feed-swiper swiper">
           <div class="swiper-button-prev feed-swiper-button-prev"></div>
@@ -211,18 +215,20 @@
           </div>
         </div>
       </div>
-      <div class="practice-con darkener">
-        <img class="practice-img" src="img/practice.jpg" />
-        <div class="student-con">
-          <p class="student-heading header-2">
-            Ты студент и хочешь устроиться<br />на практику?
-          </p>
-          <button class="btn btn-primary request">Оставить заявку</button>
-        </div>
+    </div>
+    <div class="practice-con darkener">
+      <img class="practice-img" src="img/practice.jpg" />
+      <div class="student-con">
+        <p class="student-heading header-2">
+          Ты студент и хочешь устроиться<br />на практику?
+        </p>
+        <button class="btn btn-primary request">Оставить заявку</button>
       </div>
-      <div class="questions">
-        <img id="questions-img" src="img/questions.png" />
-        <p id="questions-header">Ответы на вопросы</p>
+    </div>
+    <div class="questions">
+      <div class="container">
+        <img class="questions-img" src="img/questions.png" />
+        <p class="questions-header">Ответы на вопросы</p>
         <div class="faq">
           <details>
             <summary class="faq-question">
@@ -233,7 +239,7 @@
               внешнего вида, стоит обратить внимание еще на пару моментов. Они
               не очевидны, но очень эффективны.
               <br style="display: block; margin: 8px 0" />
-              <li id="faq-li">
+              <li class="faq-li">
                 <strong> Сохраняйте спокойствие. </strong>
                 Конечно, собеседование – это стрессовая ситуация, которая мешает
                 конструктивно мыслить. Если волнение берет верх – выпейте
@@ -241,7 +247,7 @@
                 ужасного произойти не может.
               </li>
               <br style="display: block; margin: 8px 0" />
-              <li id="faq-li">
+              <li class="faq-li">
                 <strong> Внимание к самопрезентации. </strong>
                 Если собеседование – пьеса, вы – ее главный герой. Подготовьте
                 рассказ о себе заранее, опираясь на важные навыки, и опишите,
@@ -249,7 +255,7 @@
                 уверенности в себе.
               </li>
               <br style="display: block; margin: 8px 0" />
-              <li id="faq-li">
+              <li class="faq-li">
                 <strong> Каверзные вопросы – это норма. </strong>
                 Если вам задали какой-либо вопрос, который кажется вам сложным
                 или задевает личные качества, знайте – правильных ответов не
@@ -263,80 +269,82 @@
             <summary class="faq-question">
               Как правильно составить резюме?
             </summary>
-            <div class="faq-answer">Ууу</div>
+            <div class="faq-answer">Ааа</div>
           </details>
           <details>
             <summary class="faq-question">
               Возможно ли устроиться без опыта?
             </summary>
-            <div class="faq-answer">!!!</div>
+            <div class="faq-answer">???</div>
           </details>
           <details>
             <summary class="faq-question">
               Ошибки на собеседовании. Чего нужно избегать?
             </summary>
-            <div class="faq-answer">:c</div>
+            <div class="faq-answer">:o</div>
           </details>
         </div>
       </div>
-      <div class="interview-appointment darkener">
-        <img class="inap-img laptop" src="img/laptop.jpg" />
-        <div class="inap-container">
-          <img id="inap-background" src="img/inap-background.png" />
-          <div class="sign-up-container">
-            <p id="inap-header">Записаться на собеседование</p>
-            <input
-              class="appointment-inputs"
-              type="text"
-              placeholder="Как к вам обращаться"
-            />
-            <input class="appointment-inputs type="number"
-            placeholder="Телефон"> <input class="appointment-inputs type="email"
-            placeholder="Email"> <input class="appointment-inputs type="text"
-            placeholder="Желаемая должность">
-            <fieldset id="category-field">
-              <p id="job-category">Выберите категорию занятости</p>
-              <label class="radio-option">
-                <input
-                  class="appointment-radios"
-                  type="radio"
-                  name="work-type"
-                  id="office-btn"
-                />
-                Работа в офисе
-              </label>
-              <label class="radio-option">
-                <input
-                  class="appointment-radios"
-                  type="radio"
-                  name="work-type"
-                  id="internship-btn"
-                />
-                Стажировка
-              </label>
-              <label class="radio-option">
-                <input
-                  class="appointment-radios"
-                  type="radio"
-                  name="work-type"
-                  id="remote-btn"
-                />
-                Удаленная работа
-              </label>
-            </fieldset>
-            <textarea
-              id="appointment-questions"
-              class="appointment-inputs"
-              placeholder="Ваши вопросы"
-            ></textarea>
-            <div class="inap-btns-container">
-              <button class="btn btn-secondary inap-btn attach-resume">
-                Прикрепить резюме
-              </button>
-              <button class="btn btn-primary inap-btn sign-up">
-                Записаться
-              </button>
-            </div>
+    </div>
+    <div class="interview-appointment darkener">
+      <img class="inap-img laptop" src="img/laptop.jpg" />
+      <div class="inap-container">
+        <img class="inap-background" src="img/inap-background.png" />
+        <div class="sign-up-container">
+          <p class="inap-header">Записаться на собеседование</p>
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Как к вам обращаться"
+          />
+          <input class="form-input" type="number" placeholder="Телефон" />
+          <input class="form-input" type="email" placeholder="Email" />
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Желаемая должность"
+          />
+          <fieldset class="category-field">
+            <p id="interview" class="job-category">
+              Выберите категорию занятости
+            </p>
+            <label class="radio-option">
+              <input
+                class="appointment-radios"
+                type="radio"
+                name="work-type"
+                class="office-btn"
+              />
+              Работа в офисе
+            </label>
+            <label class="radio-option">
+              <input
+                class="appointment-radios"
+                type="radio"
+                name="work-type"
+                class="internship-btn"
+              />
+              Стажировка
+            </label>
+            <label class="radio-option">
+              <input
+                class="appointment-radios"
+                type="radio"
+                name="work-type"
+                class="remote-btn"
+              />
+              Удаленная работа
+            </label>
+          </fieldset>
+          <textarea
+            class="appointment-questions form-input"
+            placeholder="Ваши вопросы"
+          ></textarea>
+          <div class="inap-btns-container">
+            <button class="btn btn-secondary inap-btn attach-resume">
+              Прикрепить резюме
+            </button>
+            <button class="btn btn-primary inap-btn sign-up">Записаться</button>
           </div>
         </div>
       </div>

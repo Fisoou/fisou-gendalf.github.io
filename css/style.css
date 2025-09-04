@@ -567,6 +567,8 @@ details[open] .faq-question::before {
   margin-bottom: 6px;
   border: 1px solid var(--gray-text);
   padding: 0 0 0 16px;
+  width: 568px;
+  margin: 3px auto;
 }
 
 .form-input::placeholder {
@@ -683,7 +685,7 @@ details[open] .faq-question::before {
     display: none;
   }
 
-  .mobile-icons {
+  .mobile-icons-con {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -768,13 +770,13 @@ details[open] .faq-question::before {
     margin: auto;
   }
 
-  .welcome-gendalf {
+  .welcome-heading {
     font-size: 24px;
     line-height: 32px;
     margin: 31px auto 20px auto;
   }
 
-  .welcome-text {
+  .welcome-desc {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
@@ -790,7 +792,7 @@ details[open] .faq-question::before {
     margin: auto;
   }
 
-  .welcome-btn {
+  .welcome-btns button {
     width: 295px !important;
     height: 50px !important;
   }
@@ -801,7 +803,7 @@ details[open] .faq-question::before {
     margin: 10px 10px 30px 10px;
   }
 
-  .intro-img {
+  .office-img {
     display: none !important;
   }
 
@@ -849,8 +851,9 @@ details[open] .faq-question::before {
     font-size: 28px;
   }
 
-  .infrastructure-text {
-    font-size: 16px;
+  .infrastructure-text-con {
+    width: 494px;
+    height: 185px;
     margin: 10px 10px 0 10px;
   }
 
@@ -939,7 +942,7 @@ details[open] .faq-question::before {
     height: 569px;
   }
 
-  .infrastructure-text {
+  .infrastructure-text-con {
     width: auto;
     margin: 0 10px 21px 10px;
   }
@@ -954,7 +957,7 @@ details[open] .faq-question::before {
     height: 100%;
   }
 
-  .appointment-inputs {
+  .form-input {
     width: auto !important;
     margin: 6px 29px 0 29px;
     box-sizing: border-box;
